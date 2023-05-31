@@ -1,0 +1,323 @@
+
+.top-header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #333;
+
+}
+.detailsimg{
+
+    width: 90%;
+    margin: 0 30px;
+    height: 500px;
+}
+@media screen and (max-width: 600px) {
+  .detailsimg{
+    height: 300px;
+  }
+}
+h2{
+    font-family: cursive;
+    color: #04AA6D;
+    font-size: 40px;
+    padding: 21px 0;
+    text-align: center;
+    margin: 10px 0;
+
+}
+b{
+  /* color: #dbb82e; */
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+/* Navbar CSS */
+li{
+  list-style: none;
+}
+a{
+  color: #111;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 14vh;
+  background: #04AA6D;
+}
+.logo{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav_manu{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap: 3rem;
+}
+.nav_toggler{
+   cursor: pointer;
+   display: none;
+}
+.nav_toggler div{
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: #111;
+}
+.navlink{
+  font-size: 22px;
+  margin: 0 10px;
+  font-family: monospace;
+}
+h4{
+  text-transform: capitalize;
+  font-family: monospace;
+}
+@media screen and (max-width: 768px) {
+  .nav_toggler{
+    display: block;
+  }
+  .nav_manu{
+    position: fixed;
+    top: 13vh;
+    right: 0;
+    width: 50%;
+    height: 93vh;
+    background: #222;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: .3s;
+    z-index: 999;
+  }
+  .navlink{
+    color: #f2f2f2;
+    display: block;
+    line-height: 50px;
+  }
+  .nav_active{
+    flex-direction: column;
+    transform: translateX(0);
+  }
+}
+
+/* End navbar CSS */
+
+/* footer section start */
+
+.footer_section {
+  background-color: #222;
+  width: 100%;
+  float: left;
+  height: auto;
+  background-size: 100%;
+  padding-bottom: 30px;
+  background-repeat: no-repeat;
+  margin-top: 90px;
+  padding: 50px 0;
+}
+
+.map_icon {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  color: #fff;
+}
+
+.map_icon a {
+  color: #ffffff;
+}
+
+.map_icon a:hover {
+  color: #04AA6D;
+}
+
+.address_text {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  color: #04AA6D;
+  margin: 0px;
+  padding-left: 23px;
+}
+
+.footer_sectio_2 {
+  width: 100%;
+  float: left;
+}
+
+.footer_logo {
+  width: 100%;
+  float: left;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+}
+
+.useful_text {
+  width: 100%;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  text-align: left;
+}
+
+.footer_text {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  color: #f8f8f8;
+  margin: 0px;
+  padding-top: 10px;
+}
+
+.footer_menu {
+  width: 100%;
+  float: left;
+}
+.footer_menu ul {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 20px;
+}
+.footer_menu li {
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer_menu li a{
+  color: #ffffff;
+}
+.footer_menu li a:hover {
+  color: #ffffff;
+}
+.footer_menu li::after {
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  height: 8px;
+  width: 8px;
+  left: 0px;
+  justify-content: center;
+  margin-top: 9px;
+  margin-left: 15px;
+  border-radius: 100%;
+}
+.footer_menu li:hover::after {
+  background-color: #04AA6D;
+}
+.footer_menu li.active::after {
+  background-color: #04AA6D;
+}
+
+.padding_left15 {
+  padding-left: 15px;
+}
+
+.subscribe_menu {
+  width: 100%;
+  float: left;
+}
+
+.subscribe_menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.subscribe_menu li a {
+  padding: 20px 30px 0px 0px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.subscribe_menu li a:hover {
+  color: #8eb50b;
+}
+
+.social_icon {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.social_icon ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.social_icon li {
+  float: left;
+}
+
+.social_icon li a {
+  float: left;
+  padding: 3px 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 22px;
+  margin: 0px 5px;
+  width: 40px;
+  text-align: center;
+  background-color: #04AA6D;
+  transition: .3s ;
+}
+
+.social_icon li a:hover {
+  transform: scale(1.2);
+}
+
+
+/* footer section end */
+
+
+/* copyright section start */
+
+.copyright_section {
+  width: 100%;
+  float: left;
+  background-color: #04AA6D;
+  height: auto;
+}
+
+.copyright_text {
+  width: 100%;
+  color: #fefefd;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+.copyright_text a {
+  color: #fefefd;
+}
+
+.copyright_text a:hover {
+  color: #252525;
+}
+
+.margin_top_90 {
+  margin-top: 90px;
+}
+
+
